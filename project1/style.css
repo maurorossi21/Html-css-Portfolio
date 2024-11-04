@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%; /* Isso garante que a página ocupe 100% da altura da janela */
+  background-color: rgb(255, 255, 255);
+}
+
+.subtitle{
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: column; /* Coloca o título e o subtítulo em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100vh; /* Faz a barra ocupar toda a altura da janela */
+ 
+}
+
+.navbar-box{
+  padding: 250px 150px;
+  background-color: rgb(196, 46, 1);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+.button{
+ justify-content: center;
+ margin-top: 30px;
+ margin-left: 5px;
+ align-items: center;
+ background-color: black;
+ color: white;
+ height: 35px;
+ width: 100px;
+ border:rgb(196, 46, 1);
+ border-radius: 6px;
+ font-size: 15px;
+ box-shadow: black 0px 0px 1px;
+}
+
+.button:hover{
+  background-color: rgb(48, 48, 48);
+}
+.button:active{
+  cursor: pointer;
+  opacity: 0,15px;
+}

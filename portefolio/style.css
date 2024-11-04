@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Roboto, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 500;
+  color: orangered; /* Adicionando a cor diretamente aqui */
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  border-bottom: 2px solid orangered;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  color: orangered;
+}
+
+.active {
+  border-bottom: 2px solid orangered;
+  color: orangered;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.home-img img {
+  width: 500px;
+  border-radius: 50%;
+  height: 650px;
+  max-width: 100%; /* Para se adaptar a telas menores */
+}
+
+.home-content {
+  text-align: center; /* Centraliza o texto */
+}
+
+.home-content p {
+  width: 800px;
+  margin: 0 auto; /* Centraliza o parágrafo */
+  line-height: 1.5;
+}
+
+.home-content h1 {
+  font-size: 4vw; /* Ajusta o tamanho da fonte para ser responsivo */
+}
+
+.home-name {
+  color: orangered;
+  font-size: 50px;
+}
+
+.home-content h3 {
+  font-size: 1.2em; /* Pode ser ajustado para ser responsivo */
+}
+
+.web-developer {
+  font-size: 25px;
+  color: orangered;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column; /* Muda a direção da navegação para coluna */
+    padding: 10px 5%;
+    justify-content: flex-end;
+  }
+
+  nav {
+    flex-direction: column; /* Muda a direção da navegação para coluna */
+    gap: 10px; /* Reduz o espaço entre os links */
+    align-items: flex-start; /* Alinha links ao início */
+    display: none;
+  }
+
+  .home {
+    flex-direction: column; /* Muda a direção para coluna */
+    align-items: center; /* Centraliza os itens */
+    padding-top: 60px;
+  }
+
+  .home-img img {
+    width: 100%; /* Ajusta para a largura total da tela */
+    height: auto; /* Mantém a proporção */
+    max-width: 400px; /* Define uma largura máxima */
+    margin-top: -20px;
+  }
+
+  .home-content {
+    width: 90%; /* Ajusta a largura do conteúdo */
+  }
+
+  .home-name {
+    font-size: 30px; /* Reduz o tamanho da fonte */
+  }
+
+  .home-content h1 {
+    font-size: 6vw; /* Ajusta o tamanho da fonte do h1 */
+  }
+
+  .home-content h3 {
+    font-size: 1.5em; /* Ajusta o tamanho da fonte do h3 */
+  }
+  .home-content p {
+    width: 90%; /* Ajusta a largura do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    line-height: 1.5; /* Mantém o espaçamento entre linhas */
+    text-align: center; /* Centraliza o texto */
+    font-size: 3vw; /* Tamanho responsivo para o texto */
+  }
+
+  .social-icons a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid orangered;
+      background-color: transparent;
+      border-radius: 50%; /* Borda arredondada */
+      width: 40px; /* Tamanho do ícone */
+      height: 40px; /* Tamanho do ícone */
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+  }
+ 
+  .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orangered;
+    background-color: transparent;
+    border-radius: 50%; /* Borda arredondada */
+    width: 40px; /* Tamanho do ícone */
+    height: 40px; /* Tamanho do ícone */
+    transition: background-color 0.3s, transform 0.3s;
+
+    .social-icon a:hover{
+      color: black;
+      transform: scale(1,3) translateY(-5px);
+      background-color: orangered;
+       }
+       .btn{
+        text-decoration: none;
+       }
+  }
+
+  .social-icon a:hover{
+ color: black;
+ transform: scale(1,3) translateY(-5px);
+ background-color: orangered;
+  }
