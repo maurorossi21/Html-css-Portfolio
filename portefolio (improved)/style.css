@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Roboto, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: orangered; /* Adicionando a cor diretamente aqui */
+  margin-right: auto;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+  font-size: 17px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 2px solid orangered;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  color: orangered;
+}
+
+.active {
+  border-bottom: 2px solid orangered;
+  color: orangered;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.home-img img {
+  width: 500px;
+  border-radius: 50%;
+  height: 650px;
+  max-width: 100%; /* Para se adaptar a telas menores */
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.home-content {
+  text-align: center; /* Centraliza o texto */
+}
+
+.home-content p {
+  width: 800px;
+  margin: 20px auto; /* Centraliza o parágrafo */
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align:start;
+  padding-left: 100px
+
+}
+
+.home-content h1 {
+  font-size: 4vw; /* Ajusta o tamanho da fonte para ser responsivo */
+  padding-right: 240px;
+}
+
+.home-name {
+  color: orangered;
+  font-size: 50px;
+}
+
+.home-content h3 {
+  font-size: 40px; /* Pode ser ajustado para ser responsivo */
+  padding-right: 185px;
+}
+
+.web-developer {
+  font-size: 40px;
+  color: orangered;
+  width: fit-content;
+  margin: 0 auto;
+
+}
+
+p {
+  font-size: 15px;
+}
+.social-icons{
+  padding-right: 300px;
+  margin-right: 145px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid orangered;
+  background-color: transparent;
+  border-radius: 50%; /* Borda arredondada */
+  width: 40px; /* Tamanho do ícone */
+  height: 40px; /* Tamanho do ícone */
+  transition: background-color 0.3s, transform 0.3s;
+color: orangered;
+margin-bottom: 30px;
+margin-top: 20px;
+
+}
+
+  .social-icons a:hover{
+    color: black;
+    background-color: orangered;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.5); /* Sombra laranja avermelhada ao clicar */
+      transform: translateY(2px); /* Leve movimento para baixo ao clicar */   
+     }
+
+     .social-icons a:active{
+      opacity: 0.15 px;
+      color: rgb(197, 197, 197);
+     }
+
+     .btn{
+      border: solid 2px orangered;
+      border-radius: 40px;
+      width: 145px;
+      height: 45px;
+      margin-right: 465px;
+      background-color: transparent;
+      color: orangered;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      font-size: 18px;
+      font-weight: 700;
+
+     }
+
+     
+     .btn:hover {
+      background-color: orangered;
+      color:black;
+      box-shadow: 0 4px 15px rgba(255, 69, 0, 0.5); /* Sombra laranja avermelhada ao clicar */
+      transform: translateY(2px); /* Leve movimento para baixo ao clicar */   
+     }
+
+     .btn:active{
+
+      color:white
+     }
+
+     
+      
+
+     
+
+         
+
+
+
+
+/* Media Queries */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column; /* Muda a direção da navegação para coluna */
+    padding: 10px 5%;
+    justify-content: flex-end;
+  }
+
+  nav {
+    flex-direction: column; /* Muda a direção da navegação para coluna */
+    gap: 10px; /* Reduz o espaço entre os links */
+    align-items: flex-start; /* Alinha links ao início */
+    display: none;
+  }
+
+  .home {
+    flex-direction: column; /* Muda a direção para coluna */
+    align-items: center; /* Centraliza os itens */
+    padding-top: 60px;
+  }
+
+  .home-img img {
+    width: 90%; /* Ajusta para a largura total da tela */
+    height: auto; /* Mantém a proporção */
+    max-width: 300px; /* Define uma largura máxima */
+    margin-top: -30px;
+    
+  }
+
+  .home-content  {
+    width: 90%; /* Ajusta a largura do conteúdo */
+    padding:0 ; /* Remove padding para evitar que fique muito à esquerda */
+    text-align: center;
+  }
+
+  .home-name {
+    font-size: 6vw; /* Reduz o tamanho da fonte */
+  }
+
+  .home-content h1 {
+    font-size: 6vw; /* Ajusta o tamanho da fonte do h1 */
+    padding-right:180px; /* Remove padding para alinhar melhor */
+  }
+
+  .home-content h3 {
+    font-size: 1.5em; /* Ajusta o tamanho da fonte do h3 */
+    padding-right: 0; /* Remove padding */
+    margin-bottom: 10px;
+    padding-right: 160px;
+  }
+
+  .home-content p {
+    width: 90%; /* Ajusta a largura do parágrafo para 100% */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    line-height: 1.5; /* Mantém o espaçamento entre linhas */
+    text-align: center; /* Centraliza o texto */
+    font-size: 2.5vw; /* Tamanho responsivo para o texto */
+    padding: 0;
+    
+  }
+
+  .social-icons {
+    display: flex;
+    margin-left: 0; /* Remove margem para centralizar */
+    gap: 12px; /* Espaçamento entre os ícones */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    padding-left: 80px;
+  }
+
+  .social-icons a {
+    width: 85px; /* Tamanho do ícone */
+    height: 25px; /* Tamanho do ícone */
+    text-decoration: none;
+    border-radius: 100%;
+    
+  }
+
+  .web-developer {
+    font-size: 16px;
+    color: orangered;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .eu-text {
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px  !important ;
+    
+  }
+}
+
+/* Estilos específicos para tablets */
+@media (min-width: 600px) and (max-width: 900px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 5%;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    height: 700px;
+    padding-right: 80px;
+  }
+
+  .home-img img {
+    width: 70%; /* Ajusta a largura da imagem para tablets */
+    max-width: 350px;
+    margin-top: 20px;
+    margin-left: 60px;
+    
+  }
+
+  .home-content {
+    width: 80%; /* Ajusta a largura do conteúdo para tablets */
+    padding: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  .home-name {
+    font-size: 5vw; /* Ajusta a fonte para tablets */
+  }
+
+  .home-content h1 {
+    font-size: 5vw; /* Fonte responsiva para o h1 */
+    padding-right: 0; /* Remove padding extra */
+  }
+
+  .home-content h3 {
+    font-size: 2em; /* Ajusta a fonte para h3 */
+    padding-right: 0;
+  }
+
+  .home-content p {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 1.0em; /* Fonte maior para melhor leitura */
+  }
+
+  .social-icons {
+    gap: 15px;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    width: 50px; /* Tamanho do ícone ajustado */
+    height: 35px;
+  }
+
+  .web-developer {
+    font-size: 25px; /* Ajuste específico para o texto de digitação */
+    color: orangered;
+    margin: 0 auto;
+  }
+  
+  .eu-text{
+    font-size: 25px !important;
+  }
+
+  .btn {
+    margin-right: 0;
+    width: 130px;
+    height: 40px;
+    margin-bottom: 60px;
+    margin-right: 950px;
+  }
+
+  .btn :active{
+    color: white;
+    background-color: white;
+  }
+}
+
