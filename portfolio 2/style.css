@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+.logo{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  position: relative;
+}
+
+.logo::before {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #081b29;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
+}
+
+nav{
+  display: flex;
+  gap:40px;
+}
+
+.active{
+  text-decoration: none;
+  color: #00abf0;
+}
+nav a{
+  color: white;
+  font-size: 18px;
+   font-weight: 500;
+   margin-left: 35px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav a:hover,
+nav a:active{
+  color: #00abf0;
+}
+
+.home{
+  background: url(home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  
+}
+
+.home-content{
+  max-width: 600px;
+  position: relative;
+}
+
+.home-content p{
+  color: white;
+  position: relative;
+}
+.home-content p::before {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #081b29;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.7s;
+}
+
+
+.home-content h1{
+  position: relative;
+  color: white;
+  font-size: 50px
+}
+
+
+.home-content h1::before {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #081b29;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: .1s;
+}
+
+.subtitle-text{
+  position: relative;
+color:#00abf0; 
+font-size: 25px;
+margin-bottom: 15px;
+}
+.subtitle-text::before {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #081b29;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.3s;
+}
+
+
+.btn-container{
+  display: flex;
+  gap: 35px;
+  margin-top: 30px;
+  position: relative;
+}
+
+
+
+
+.btn-first{
+  width: 110px;
+  height: 38px;
+  background-color: #00abf0;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-first:hover{
+  background-color: #00abf0;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 171, 240, 0.5);
+  transform: translateY(2px);
+}
+
+.btn-two{
+  width: 110px;
+  height: 39px;
+  background: transparent;
+  border: solid 2px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #00abf0;
+  cursor:pointer;
+}
+
+.btn-two:hover{
+  background-color: #00abf0;
+  color: white;
+  border:  #00abf0;
+  box-shadow: 0 4px 15px rgba(0, 171, 240, 0.5);
+  transform: translateY(2px);
+}
+
+.social-icons{
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(100px);
+  gap: 23px;
+}
+
+.social-icons a{
+  border-radius: 50%;
+  border: solid 2px #00abf0 ;
+  color: #00abf0;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+.social-icons a:hover{
+  background-color:#00abf0;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 171, 240, 0.5);
+  transform: translateY(2px);
+}
+
+.home-imgHover{
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 600px;
+  height: 100%;
+  background: transparent;
+ transition: 3s;
+}
+
+.home-imgHover:hover{
+  background: #081b29;
+  opacity: .8;
+}
+
+.home-imgHover::after {
+  content: '' ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #081b29;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 2s;
+  z-index: 2;
+}
+
+
+/*KEYFRAMES ANIMATION */
+
+@keyframes showRight {
+  100% {
+    width: 0 ;
+  }
+}
+
